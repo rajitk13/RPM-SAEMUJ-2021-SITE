@@ -1,0 +1,159 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* navbar css customization */
+.navbar {
+  padding-left: 1rem;
+  background-color: #393E46;
+}
+
+/* CSS for home page sections styling  */
+h3{
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+/* Common syntax for all sections */
+#rpm-defination, #our-vision, #achievements, #contact-us, #our-team, #technical-sessions ,#membership,#fees-table{
+  padding: 5% 10%;
+}
+
+/* what is rpm? -section */
+#rpm-defination {
+  background-color: #EEEEEE;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+/* our vision -section */
+#our-vision {
+  background-color: #FFD369;
+  font-size: 1.5rem;
+}
+
+.vision-item {
+  text-align: center;
+}
+
+/* achievements -section */
+#achievements {
+  background-color: #EEEEEE;
+  font-size: 1rem;
+}
+
+/* contact Us From */
+.map-contact-us {
+  margin-top: 1.7rem;
+}
+
+.contact-submit {
+  margin-top: 0.5rem;
+}
+
+/* media queries for the map to be adjusted */
+@media (max-width:888px) {
+  .map-iframe {
+    height: 300px;
+    width: 600px;
+  }
+}
+
+@media (max-width:690px) {
+  .map-iframe {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+@media (max-width:460px) {
+  .map-iframe {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media (max-width:300px) {
+  .map-iframe {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+/* technical sessions page */
+.session {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.session-title {
+  margin: 1rem 1rem;
+}
+
+/* our-team page */
+.post-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.post-Link{
+  color:#000000;
+}
+.post-Link:hover{
+  color:#FFD369;
+}
+
+.post-card{
+  margin-top: 1rem;
+}
+
+/* membership page/Join us */
+#membership{
+  background-color: #EEEEEE;
+}
+/* footer  */
+footer {
+  padding: 2% 10%;
+  background-color: #222831;
+  color: #ffff;
+  text-align: center;
+}
+
+.footer-Link {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.social {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.footer-Link:hover {
+  color: #393E46;
+}
+/* 404 NOT FOUND  */
+.not-found{
+margin : 0 auto;
+}
+
+/* Minimalistic ScrollBar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CBCBCB;
+  outline: 2px solid #FFF;
+  outline-offset: -2px;
+  border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
