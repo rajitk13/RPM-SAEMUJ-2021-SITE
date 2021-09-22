@@ -54,6 +54,10 @@ contact.save(function(err){
 res.redirect("/");
 
 });
+//Serving up rpm-x-rpx event site
+app.get("/rpm-x-rpx",function(req,res){
+  res.render('rpm-x-rpx');
+});
 
 // UNDEFINAED PATH 404 Error
 app.get("*",function(req,res){

@@ -15,7 +15,7 @@ h3{
 }
 
 /* Common syntax for all sections */
-#rpm-defination, #our-vision, #achievements, #contact-us, #our-team, #technical-sessions ,#membership,#fees-table{
+#rpm-defination, #our-vision, #achievements, #contact-us, #our-team, #technical-sessions ,#membership,#fees-table,#rpm-x-rpx{
   padding: 5% 10%;
 }
 
@@ -112,6 +112,18 @@ h3{
 #membership{
   background-color: #EEEEEE;
 }
+
+/* rpm-x-rpx event */
+#rpm-x-rpx{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rpm-x-rpx-text{
+  margin-top: 2rem;
+}
+
+
 /* footer  */
 footer {
   padding: 2% 10%;

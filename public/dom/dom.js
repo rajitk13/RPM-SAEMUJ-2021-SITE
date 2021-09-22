@@ -16,3 +16,7 @@ $(".contact-submit").bind("click", (function () {
 $(".membership-btn").bind("click",(function(){
   alert("Membership Currently Closed");
 }));
+
+$(".rpx-btn").bind("click",(function () {
+  alert("Stay Tuned!");
+}));
