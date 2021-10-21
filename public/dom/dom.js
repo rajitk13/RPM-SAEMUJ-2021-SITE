@@ -18,5 +18,9 @@ $(".membership-btn").bind("click",(function(){
 }));
 
 $(".rpx-btn").bind("click",(function () {
-  alert("Stay Tuned!");
+  alert("This Event has ended!");
 }));
+
+$(".admin-btn").bind("click",(function(){
+  alert("Technical Session Updated");
+}))

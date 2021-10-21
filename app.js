@@ -18,7 +18,17 @@ const contactUsSchema = new Schema({
   msg:String
 });
 
+const sessionSchema = new Schema({
+  heading:String,
+  invite:String,
+  time:String,
+  venue:String,
+  instructor:String,
+  link:String
+})
+
 const Contact = mongoose.model('Contact',contactUsSchema);
+const Session = mongoose.model('Session',sessionSchema);
 
 app.use(express.urlencoded({extended:true}));
 //Using static css file
@@ -29,7 +39,10 @@ app.get("/",function(req,res){
 });
 //Serving up the tehcnical-sessions page
 app.get("/technical-sessions",function(req,res){
-  res.render("technical-sessions");
+  Session.find({},function(err,sessions){
+    res.render("technical-sessions",{sessions:sessions});
+  });
+  
 });
 //Serving Up our-team page
 app.get("/our-team",function(req,res){
@@ -58,6 +71,27 @@ res.redirect("/");
 app.get("/rpm-x-rpx",function(req,res){
   res.render('rpm-x-rpx');
 });
+
+//ADMIN page for Technical Session Page
+app.get("/admin",function(req,res){
+  res.render('admin');
+})
+
+//ADMIN PAGE submit request
+app.post("/admin",function(req,res){
+   let SessionData = new Session({
+    heading:req.body.heading,
+    invite:req.body.invite,
+    time:req.body.time,
+    venue:req.body.venue,
+    instructor:req.body.instructor,
+    link:req.body.link
+   });
+   SessionData.save(function(err){
+    if(err){console.log(err);}
+  });
+  res.redirect("/admin");
+})
 
 // UNDEFINAED PATH 404 Error
 app.get("*",function(req,res){

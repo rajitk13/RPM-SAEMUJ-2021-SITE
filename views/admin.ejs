@@ -1,0 +1,78 @@
+<%-include('partials/header')-%> <%-include('partials/nav-bar')-%>
+<section id="admin">
+  <h3>Admin - Technical Session</h3>
+  <form post="/admin" method="post">
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label"
+        >Session Heading</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="heading"
+        name="heading"
+        placeholder="Technical Session On "
+        autocomplete="off"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea" class="form-label"
+        >Invite Details</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea"
+        rows="3"
+        placeholder="Enter Card Body Text"
+        id="invite"
+        name="invite"
+        autocomplete="off"
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Time</label>
+      <input
+        type="text"
+        class="form-control"
+        id="time"
+        name="time"
+        placeholder="Enter date and time in exact format "
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Venue</label>
+      <input
+        type="text"
+        class="form-control"
+        id="venue"
+        name="venue"
+        placeholder="Venue / Platform Name "
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Instructor</label>
+      <input
+        type="text"
+        class="form-control"
+        id="instructor"
+        name="instructor"
+        placeholder="Instructor Name"
+        autocomplete="off"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Meeting Link</label>
+      <input
+        type="text"
+        class="form-control"
+        id="link"
+        name="link"
+        placeholder="Link URL"
+        autocomplete="off"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary admin-btn">Submit</button>
+  </form>
+</section>
+
+<%-include('partials/footer')-%> <%-include('partials/sticky-footer')-%>
