@@ -73,6 +73,29 @@
     </div>
     <button type="submit" class="btn btn-primary admin-btn">Submit</button>
   </form>
+
+  <h3>Delete Posts</h3>
+  <form action="/delete" method="post">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Post Name</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let i=0; i<sessions.length; i++) { %>
+        <tr>
+          <td><%=sessions[i].heading%></td>
+          <td>
+            <input type="checkbox" class="delete" name = "checkbox" value ="<%=sessions[i].id %>"onChange="this.form.submit()">
+          </td>
+        </tr>
+
+        <%}%>
+      </tbody>
+    </table>
+  </form>
 </section>
 
 <%-include('partials/footer')-%> <%-include('partials/sticky-footer')-%>

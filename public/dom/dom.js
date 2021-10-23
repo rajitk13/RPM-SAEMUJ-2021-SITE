@@ -23,4 +23,8 @@ $(".rpx-btn").bind("click",(function () {
 
 $(".admin-btn").bind("click",(function(){
   alert("Technical Session Updated");
-}))
+}));
+
+$(".delete").bind("click",(function () {
+  alert("The Session Card is deleted");
+}));
